@@ -1,0 +1,15 @@
+version: 2
+
+models: 
+  - name: social_session_instances
+    description: >
+      Model with instances of registered interactions between users and social sessions. Will only say whether a daily interaction effectively occurred 
+      and not how many times a user might have interacted with a social session in a day. 
+  - name: social_session_creators
+    description: Model with an (approximate) users who generated a social session. 
+  - name: social_session_interactions
+    description: >
+      An interaction matrix between users and social sessions, enriched with the identity of the user who created the original session, the acquisition 
+      date of the user who created the interaction and the date when the session was first created.
+  - name: social_session_metrics
+    description: An intermediate table then enriched with data for User Acquisition. 

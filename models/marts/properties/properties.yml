@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: play_session_properties
+    description: Acquisition properties for sessions aggregated at that level. 
+  

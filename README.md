@@ -23,5 +23,5 @@ For example:
 - another important feature used across multiple models is what we have taken to call "user_properties" - in essence a table that gives us data regarding when a user was acquired. Obviously this could be done by scanning directly from a staging layer, but as those layers grow more and more each day, we want to avoid that. Furthermore, those require window functions that are very costly in terms of processing resources and can lead to timeouts. 
 - somewhere downstream we'll need to create a table that calculates user retention. For each of those cohorts, we want to associate the first values of certain attributes when the user was acquired. 
 
-For the examples above, and given how central play_session_properties is within our DAG, how many tables and how many clients it serves and how it works around an important technical constraint (processing costs) I have chosen it as an example. 
+For the examples above, and given how central play_session_properties is within our DAG, how many tables and how many clients it serves and how it works around an important technical constraint (processing time) I have chosen it as an example. 
 
